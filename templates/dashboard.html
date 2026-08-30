@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard - Secure Login System</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+<body>
+
+```
+<div class="container">
+
+    <div class="card dashboard">
+
+        <div class="security-icon">🔐</div>
+
+        <h1>Welcome, {{ username }}!</h1>
+
+        <p class="subtitle">
+            You have successfully logged in to the secure system.
+        </p>
+
+        <div class="security-box">
+            <h3>Security Status</h3>
+
+            <p>✓ Password protected with bcrypt</p>
+            <p>✓ Session authentication active</p>
+            <p>✓ SQL injection protection enabled</p>
+            <p>✓ Input validation enabled</p>
+        </div>
+
+        <a href="{{ url_for('logout') }}" class="logout-button">
+            Logout
+        </a>
+
+    </div>
+
+</div>
+```
+
+</body>
+</html>
